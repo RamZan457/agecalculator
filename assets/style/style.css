@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: hsl(0, 0%, 86%);
+  height: 100vh;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  height: 85vh;
+  background-color: hsl(0, 0%, 100%);
+  padding: 75px 35px;
+  margin: 8px 2%;
+  border-radius: 2rem;
+  border-bottom-right-radius: 30%;
+}
+.input-container {
+  display: flex;
+  gap: 1rem;
+}
+input {
+  border: 0.13rem solid hsl(0, 0%, 86%);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 100%;
+  transition: all 0.6s ease;
+  font-weight: 700;
+}
+hr {
+  border: 1px solid hsl(0, 0%, 86%);
+  margin: 40px 0 0 0;
+}
+input:focus {
+  outline: none;
+  border: 0.13rem solid hsl(259, 100%, 65%);
+}
+input:hover {
+  cursor: pointer;
+}
+.age {
+  color: hsl(259, 100%, 65%);
+}
+button {
+  top: -9%;
+  left: 90%;
+  position: relative;
+  padding: 15px;
+  background-color: hsl(259, 100%, 65%);
+  border-radius: 50%;
+  border: none;
+  transition: all 0.7s ease-in-out;
+}
+@media (max-width: 500px) {
+  button {
+    left: 40%;
+  }
+  .card {
+    padding-bottom: 50px;
+  }
+}
+h1 {
+  font-weight: 800;
+  font-size: 2.6rem;
+}
+
+label {
+  color: hsl(0, 1%, 44%);
+  font-weight: 400;
+}
+button:hover {
+  background-color: hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+#alert {
+  color: hsl(0, 1%, 44%);
+  padding: 5px;
+  transition: all 0.5s ease;
+}
